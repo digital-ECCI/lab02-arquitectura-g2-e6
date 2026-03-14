@@ -1,2 +1,6 @@
 # lab02-arquitectura-g2-e6
-Informe Lab #2
+## Integrantes
+
+- Juan Daniel Caballero Abril
+- Andres Felipe Albarracin Diaz
+- Kevin Steven Guzman Samper
