@@ -29,7 +29,7 @@ En la vista RTL generada, se observa claramente la estructura del código implem
 #### - Testbench y Simulación
 Para la validación del hardware, se desarrolló el archivo `SR4b_tb.v`. En lugar de probar casos aislados, se programaron tres ciclos `for` anidados que recorren la señal `M` (0 y 1) y todas las combinaciones posibles de los vectores `A` y `B` (0 a 15). Esto somete al diseño a 512 casos de prueba, garantizando su fiabilidad total.
 
-![Simulación en GTKWave](Simuñación_sumador_restador.jpeg)
+![Simulación en GTKWave](Simulación_sumador_restador.jpeg)
 
 En la captura de GTKWave se puede analizar la respuesta del circuito:
 * Las señales `A` y `B` varían en el tiempo mostrando diferentes combinaciones en hexadecimal.
