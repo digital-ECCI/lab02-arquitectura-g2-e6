@@ -22,7 +22,7 @@ Para implementar esto sin diseñar un restador desde cero, se introdujo una señ
 * **Modo Resta (M = 1):** Las compuertas XOR invierten cada bit del vector `B` (complemento a 1). Como la señal `M` también está conectada directamente al pin de acarreo inicial ($Ci$) del sumador, se suma un 1 al resultado, obteniendo el complemento a 2. El circuito realiza $A - B$.
 
 #### - Análisis del Esquemático RTL
-![Esquemático RTL del Sumador/Restador](ruta_a_tu_imagen_esquematico.jpeg)
+![Esquemático RTL del Sumador/Restador](RTL_sumador_restador.jpeg)
 
 En la vista RTL generada, se observa claramente la estructura del código implementado en `Sumador_Restador.v`. El vector de entrada `B[3..0]` atraviesa un banco de 4 compuertas XOR controladas en paralelo por la señal `M`, generando la señal interna `B_mod`. Este nuevo vector, junto con la entrada `A[3..0]`, alimenta al módulo instanciado `sumador_4b`. Destaca la conexión directa de la señal de control `M` al puerto `Ci` del sumador, lo cual es la clave para completar el complemento a 2.
 
